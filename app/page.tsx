@@ -5,17 +5,17 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const HomePage = () => {
-  const pageStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    backgroundColor: '#f0f0f0',
-    fontFamily: 'Arial, sans-serif',
-    color: '#333',
-    textAlign: 'center', // Center-align text within the container
-  };
+  // const pageStyle = {
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  //   height: '100vh',
+  //   backgroundColor: '#f0f0f0',
+  //   fontFamily: 'Arial, sans-serif',
+  //   color: '#333',
+  //   textAlign: 'center', // Center-align text within the container
+  // };
 
   const headingStyle = {
     fontSize: '5rem', // Custom font size for the heading
@@ -46,7 +46,7 @@ const HomePage = () => {
   }
 
   return (
-    <div style={pageStyle}>
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',height:'100vh',backgroundColor:'#f0f0f0',fontFamily:'Arial, sans-serif',color:'#333',textAlign:'center'}}>
        <h1 style={headingStyle}>
          Read <Link href="posts">this page!</Link>
         </h1>

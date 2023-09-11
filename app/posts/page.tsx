@@ -24,7 +24,7 @@ export default function FirstPost() {
         color: '#e69202', // Custom text color for the heading
       };
     return (
-    <div style={pageStyle}>
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',height:'100vh',backgroundColor:'#f0f0f0',fontFamily:'Arial,sans-serif',color:'#333',textAlign:'center'}}>
      <Head>
         <title>First Post</title>
     </Head>

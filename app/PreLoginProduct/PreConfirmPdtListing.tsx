@@ -135,8 +135,8 @@ export interface PreConfirmPdtListingProps {
       // const preLoginLoanProducts = this.getLoanCardList();
       return (
         <div>
-          <PdtListing margin={margin || '5px 16px 16px'}>
-            {/* unLocked products will display on top of page after banner */}
+          {/* <PdtListing margin={margin || '5px 16px 16px'}>
+            unLocked products will display on top of page after banner */}
             {/* {preLoginLoanProducts.length > 0 &&
               preLoginLoanProducts.map((item: any, itemIndex: number) => {
                if (item.id !== 'ewa') {
@@ -150,8 +150,8 @@ export interface PreConfirmPdtListingProps {
                     />
                   );
                 }
-              })} */}
-          </PdtListing>
+              })}
+          </PdtListing> */}
           <div>
             {preLoginVASProducts.length > 0 && <VASBanner btnClick={this.handlePdtClick} vasBannerList={preLoginVASProducts} margin={isWebMob && '8px 16px'} />}
           </div>

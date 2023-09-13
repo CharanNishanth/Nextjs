@@ -35,7 +35,7 @@ export const StyledBtnCon = styled.div`
 export const PdtItemsNewCon = styled.div`
   ${props => (props.padding ? props.padding : 'padding-bottom: 56px')};
 `;
-export const PdtListing = styled.div<StyledPreLoginProps>`
+export const PdtListing = styled.div`
   margin: ${props => props.margin || '16px 24px'};
 `;
 

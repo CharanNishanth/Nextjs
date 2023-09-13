@@ -22,10 +22,10 @@ export class PreLoginPdtListing extends React.Component<PreLoginProps> {
       const {  padding, margin, isWebMob } = this.props;
   
       return (
-        <NHPCon padding={padding} isWebMob={isWebMob}>
-          <PdtItemsNewCon padding={padding}>
+        <NHPCon>
+          <PdtItemsNewCon >
             <PreConfirmPdtListing margin={margin} isWebMob={isWebMob} />
-            <StyledBtnCon fxd>
+            <StyledBtnCon >
                 <Button text={'Login/Signup with Mobile'} onClick={() => console.log('button is clicked')} />
                
             </StyledBtnCon>

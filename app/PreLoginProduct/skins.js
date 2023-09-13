@@ -15,27 +15,7 @@ import {
   import {TSX} from '../components/BTypo';
   import * as React from 'react';
 
-  interface StyledPreLoginProps {
-    noPad?: string;
-    margin?: string;
-    fxd?: any;
-    noMargin?: any;
-    padding?: any;
-    postLogin?: boolean;
-    checkoutOverflow?: string;
-    noHeight?: string;
-    bottom?: string;
-    bgClr?: string;
-    border?: string;
-    isWebMob?: any;
-    isEWA?: boolean;
-  }
-  
-  interface LoanCardConProps {
-    isWebMob?: any;
-  }
-
-  export const NHPCon = styled.div<StyledPreLoginProps>`
+  export const NHPCon = styled.div`
   padding:${({padding}) => padding || '2.5rem 0'};
   background-color: ${paletteColor07};
   overflow: auto;
@@ -43,7 +23,7 @@ import {
   /* ${({isEWA}) => isEWA && 'display: flex; flex-direction: column; justify-content: center;'} */
 `;
 
-export const StyledBtnCon = styled.div<StyledPreLoginProps>`
+export const StyledBtnCon = styled.div`
   width: 100%;
   bottom: 0px;
   z-index: 100; //added z-index such that it should be over other divs
@@ -52,7 +32,7 @@ export const StyledBtnCon = styled.div<StyledPreLoginProps>`
   ${props => (props.fxd ? 'box-shadow: 0 -1px 6px 0 rgba(93, 113, 188, 0.1), 0 -1px 4px 0 rgba(0, 0, 0, 0.16);' : '')}
 `;
 
-export const PdtItemsNewCon = styled.div<StyledPreLoginProps>`
+export const PdtItemsNewCon = styled.div`
   ${props => (props.padding ? props.padding : 'padding-bottom: 56px')};
 `;
 export const PdtListing = styled.div<StyledPreLoginProps>`

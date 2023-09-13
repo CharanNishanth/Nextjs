@@ -126,29 +126,7 @@ const LoaderCon = styled.div`
   justify-content: center;
 `;
 
-const bigButtonLoading = (isLoading: boolean, isSecondary: boolean, isSmallText: boolean, text: string, dataCy: string) => {
-  if (!isLoading) {
-    return null;
-  }
-  return (
-    <div>
-      {text !== '' ? (
-      <TypoWithIcon>
-        <Typography dataCy={dataCy} variant={isSmallText ? '14-semibold' : '16-semibold'}>
-          {text}
-        </Typography>
-        <div>
-          ...
-        </div>
-      </TypoWithIcon>
-      ) : (
-          <LoaderCon>...</LoaderCon>
-      )}
-    </div>
-  );
 
-
-};
 
 //functions for primary,secondary,arrow & special button.
 //taking props and returning the button type.
@@ -165,7 +143,6 @@ const bigButton = (props: ButtonProp) => {
              {text}
            </Typography>
          )}
-         {bigButtonLoading(loading, secondary, isSmallText, text, dataCy)}
        </SecondaryButton>
        </BigButtonPadding>
       ) : (
@@ -178,7 +155,6 @@ const bigButton = (props: ButtonProp) => {
             </Typography>
             </>
           )}
-          {bigButtonLoading(loading, secondary, isSmallText, text, dataCy)}
         </PrimaryButton>
         </BigButtonPadding>
       )}

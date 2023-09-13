@@ -19,11 +19,11 @@ const VASBanner: React.FC<VASBannerProps > = props => {
         {vasBannerList.map((list: any) => {
           const { id, productName, img, productType, margin } = list;
           return (
-            <StyledFlexDiv key={id} margin={margin || "16px"} fd="column" ai="center" onClick={() => btnClick(id, productType)} data-cy={id}>
+            <StyledFlexDiv key={id} margin={"16px"} fd="column" ai="center" onClick={() =>console.log('clicked')} data-cy={id}>
               <img src={img} data-cy={id + '_img'} height="32px" />
-              <ExtendedTSX fs="10px" fw="600" clr={paletteColor11} mt="8px" data-cy={id + '_productName'}>
+              {/* <ExtendedTSX fs="10px" fw="600" clr={paletteColor11} mt="8px" data-cy={id + '_productName'}> */}
                 {productName}
-              </ExtendedTSX>
+              {/* </ExtendedTSX> */}
             </StyledFlexDiv>
           );
         })}

@@ -153,7 +153,7 @@ export interface PreConfirmPdtListingProps {
               })}
           </PdtListing> */}
           <div>
-            {preLoginVASProducts.length > 0 && <VASBanner btnClick={this.handlePdtClick} vasBannerList={preLoginVASProducts} margin={isWebMob && '8px 16px'} />}
+            {preLoginVASProducts.length > 0 && <VASBanner btnClick={this.handlePdtClick} vasBannerList={preLoginVASProducts}  />}
           </div>
         </div>
       );

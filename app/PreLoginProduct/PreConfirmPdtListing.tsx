@@ -38,19 +38,19 @@ export interface PreConfirmPdtListingProps {
         default:
           break;
       }
-     const history = useNavigate();
+    //  const history = useNavigate();
       switch (productType) {
         case 'vas':
-          history(`${'/vas/details'}?type=${item}`);
+          // history(`${'/vas/details'}?type=${item}`);
           break;
         case 'loan':
-          history(`${'/loan/details'}?type=${item}`);
+          // history(`${'/loan/details'}?type=${item}`);
           break;
         default:
           break;
       }
       if (item === 'checkout') {
-        history(`${'/checkoutFinance/home'}?type=checkout`);
+        // history(`${'/checkoutFinance/home'}?type=checkout`);
       }
     }
   

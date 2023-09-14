@@ -5,7 +5,7 @@ import BookCard from './BookCard';
 
 
 const BookCardCon = () => {
-  const enteredBooks = useSelector((state) => state.book.enteredbooks);
+  const enteredBooks = useSelector((state) => state.book.enteredbooks || {});
   const [books, setBooks] = useState([]);
 
   useEffect(() => {

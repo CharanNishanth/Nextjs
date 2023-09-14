@@ -5,7 +5,7 @@ import axios from "axios";
 
 const BookListApiCon = () => {
    const dispatch = useDispatch();
-   const books = useSelector(state => state.book.apibooks);
+   const books = useSelector(state => state.book.apibooks || {});
 //    const fetchBooksList = () => {
 //     axios
 //       .get('https://mocki.io/v1/abe4ce04-5c37-48d2-ab14-7ed6436e7670')
